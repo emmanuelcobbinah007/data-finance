@@ -9,14 +9,14 @@ const Hero = () => {
         <div className='flex justify-center items-center'>
           <p className='md:text-4xl sm:text-3xl text-xl font-bold py-4'>Fast, flexible financing for</p>
             <ReactTyped className='md:text-4xl sm:text-3xl text-xl font-bold py-4 mx-2'
-              strings= {['B2B', 'B2C', 'SAAS']}
+              strings= {['B2B', 'B2C', 'SAAS...']}
               typeSpeed={120}
               backSpeed={140}
               loop
             />
         </div>
         <p className='md:text-xl text-large font-bold text-gray-500'>Monitor your data analytics to increase revenue fot BTB, BTC & SASS platforms</p>
-        <button className='bg-[#00df9a] w-[150px] rounded-md font-medium my-6 mx-auto px-6 py-3 text-black'>Get Started</button>
+        <button className='transform transition duration-500 hover:scale-110 bg-[#00df9a] w-[150px] rounded-md font-bold my-6 mx-auto px-6 py-3 text-black'>Get Started</button>
     </div>
   )
 }
