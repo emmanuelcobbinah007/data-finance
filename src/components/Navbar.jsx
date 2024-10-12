@@ -14,14 +14,13 @@ const Navbar = () => {
   return (
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4'>
         <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1>
-        <ul className='hidden md:flex hidden'>
-            <li className='p-4'>Home</li>
-            <li className='p-4'>Company</li>
-            <li className='p-4'>Resources</li>
-            <li className='p-4'>About</li>
-            <li className='p-4'>Contact</li>
+        <ul className='hidden md:flex'>
+            <li className='p-4 cursor-pointer mx-[3px]'>Home</li>
+            <li className='p-4 cursor-pointer mx-[3px]'>Company</li>
+            <li className='p-4 w-[90px] mx-[3px] cursor-pointer'>Sign in</li>
+            <li className='p-4 pt-1 mt-3 mx-[3px] bg-white text-black w-[120px] rounded-md font-bold h-9 cursor-pointer'>Get Started</li>
         </ul>
-        <div onClick={navHandler} className='block md:hidden'>
+        <div onClick={navHandler} className='block md:hidden cursor-pointer'>
             {!nav ? <AiOutlineMenu size={20}/> : <AiOutlineClose size={20}/>}
             
         </div>
