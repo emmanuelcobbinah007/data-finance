@@ -1,22 +1,25 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Analytics from "./components/Analytics";
-import EmailForm from "./components/EmailForm";
-import Cards from "./components/Cards";
-import Footer from "./components/Footer";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MainLayout from "./Layout/MainLayout";
+import HomePage from "./Pages/HomePage";
+import CompanyPage from "./Pages/CompanyPage";
+
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <MainLayout />,
+    children: [
+    
+      { index: true, element: <HomePage /> },
+      { path: 'company', element: <CompanyPage /> },
+    ],
+  },
+])
 
 function App() {
-  return (
-    <div className=" text-white">
-      <Navbar />
-      <Hero />
-      <Analytics />
-      <EmailForm />
-      <Cards />
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router}/>
 }
 
 export default App;
