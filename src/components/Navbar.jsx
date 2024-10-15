@@ -14,11 +14,11 @@ const Navbar = () => {
     // Actual Navbar
   return (
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1>
+        <h1 className='w-full text-3xl font-bold text-[#00df9a]'><Link to='/'>REACT.</Link></h1>
         <ul className='hidden md:flex'>
-            <li className='p-4 cursor-pointer mx-[3px] hover:text-[#00df9a]'>Home</li>
-            <li className='p-4 cursor-pointer mx-[3px] hover:text-[#00df9a]'><Link to='/company'>Company</Link></li>
-            <li className='p-4 w-[90px] mx-[3px] cursor-pointer hover:text-[#00df9a]'>Sign in</li>
+        <Link to='/'><li className='p-4 cursor-pointer mx-[3px] hover:text-[#00df9a]'>Home</li></Link>
+        <Link to='/company'><li className='p-4 cursor-pointer mx-[3px] hover:text-[#00df9a]'>Company</li></Link>
+        <Link to='/sign-in'><li className='p-4 w-[90px] mx-[3px] cursor-pointer hover:text-[#00df9a]'>Sign in</li></Link>
             <li className='p-4 pt-1.5 mt-3 mx-[3px] bg-white text-black w-[128px] pr-[1] rounded-md font-bold h-9 cursor-pointer hover:bg-[#00df9a]'>Get Started</li>
         </ul>
         <div onClick={navHandler} className='block md:hidden cursor-pointer hover:text-[#00df9a]'>

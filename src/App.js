@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./Layout/MainLayout";
 import HomePage from "./Pages/HomePage";
 import CompanyPage from "./Pages/CompanyPage";
+import SignIn from "./Pages/SignIn";
 
 
 
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       { path: 'company', element: <CompanyPage /> },
     ],
   },
+  { path: 'sign-in', element: <SignIn /> },
 ])
 
 function App() {
