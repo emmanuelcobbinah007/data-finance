@@ -11,6 +11,7 @@ body {
     background-color: #000300;
     overflow: auto;
     font-family: 'Poppins';
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
