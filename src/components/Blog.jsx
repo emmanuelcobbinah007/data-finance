@@ -4,7 +4,7 @@ const Blog = () => {
   return (
     <div className=' text-black bg-white pb-12'>
         <div className=' max-w-[1000px] m-auto'>
-          <h1 className='text-black font-bold md:text-6xl sm:text-5xl text-3xl md:py-6 text-right'>Our Blog...</h1>
+          <h1 className='text-black font-bold md:text-6xl sm:text-5xl text-3xl md:py-6 lg:text-right text-center'>Our Blog...</h1>
       </div>
         <div className='max-w-[1200px] mx-6 my-12 px-4 md:mx-auto grid md:grid-cols-3 gap-6'>
             <div className='bg-gray-200 rounded-md px-6 pt-4 shadow-xl flex flex-col'>
