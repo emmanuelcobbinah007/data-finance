@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { ReactTyped } from "react-typed";
 
 const Hero = () => {
@@ -16,7 +17,7 @@ const Hero = () => {
             />
         </div>
         <p className='md:text-xl text-large font-bold text-gray-500'>Monitor your data analytics to increase revenue fot BTB, BTC & SASS platforms</p>
-        <button className='transform transition duration-500 hover:scale-110 bg-[#00df9a] w-[150px] rounded-md font-bold my-6 mx-auto px-6 py-3 text-black'>Get Started</button>
+        <button className='transform transition duration-500 hover:scale-110 bg-[#00df9a] w-[150px] rounded-md font-bold my-6 mx-auto px-6 py-3 text-black'><Link to='/sign-up'>Get Started</Link></button>
     </div>
   )
 }
