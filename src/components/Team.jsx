@@ -44,17 +44,17 @@ const Team = () => {
               <p className='text-[#00df9a] font-bold text-center'>Founder, Managing Director</p>
             </div>
           </div>
-          <div className={`relative z-5 ease-in-out duration-300 ${arrow ? 'mt-[-660px]' : 'mt-2 my-8 flex flex-col justify-center'}`}>
-          <div className='grid grid-cols-4 gap-20 mx-auto'>
+          <div className={`pb-10 px-10 lg:relative lg:z-5 lg:ease-in-out lg:duration-300 ${arrow ? 'lg:mt-[-660px]' : 'mt-2 lg:my-8 lg:flex lg:flex-col lg:justify-center'}`}>
+          <div className='grid lg:grid-cols-4 lg:gap-20 md:grid-cols-3 grid-cols-2 gap-10 mx-auto'>
             {people.map(person => (
               <div className='text-center' key={person.id}>
-                <img className='w-[225px] rounded-lg shadow-md' src={person.img} alt="/" />
+                <img className='w-[225px] rounded-lg shadow-md mx-auto' src={person.img} alt="/" />
                 <h1 className='pt-2 w-full lg:text-xl md:text-lg font-bold'>{person.name}</h1>
                 <p className='text-[#00df9a] font-bold '>{person.role}</p>
               </div>))} 
           </div>
           </div>
-          <div className='max-w-[1240px] pt-[60px]' onClick={turn}>
+          <div className='max-w-[1240px] pt-[60px] hidden lg:block' onClick={turn}>
             {arrow ? <FaAngleDown className='text-4xl mx-auto'/> : <FaAngleUp className='text-4xl mx-auto'/> }
           
           </div>
