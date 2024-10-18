@@ -32,10 +32,10 @@ const Team = () => {
   return (
     <div className='text-black bg-white'>
       <div className=' max-w-[1240px] m-auto'>
-        <div className='relative z-10 bg-white max-w-[1000px] mx-auto lg:text-left text-center'> 
+        <div className='relative z-10 bg-white max-w-full pt-10 mx-auto lg:text-left text-center'> 
           <h1 className='text-[#00df9a] font-bold md:text-6xl sm:text-5xl text-3xl md:py-6'>The Team</h1>
         </div>
-        <div className='relative z-10 grid grid-cols-2 py-6 bg-white'>
+        <div className='relative z-10 grid grid-cols-2 pt-10 pb-24 bg-white'>
             <div className='flex justify-center'>
             <img className='rounded-xl lg:w-[300px] md:w-[250px] shadow-xl mr-[-25%]' src={Picture1} alt="/" />
             </div>
