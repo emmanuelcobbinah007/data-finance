@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar3 from '../components/Navbar3'
+import SignUpForm from '../components/SignUpForm'
 
 const SignUp = () => {
   return (
-    <div className='text-white'>
-        < Navbar3/>
+    <div className='text-white bg-black h-screen'>
+      <SignUpForm/>
     </div>
   )
 }

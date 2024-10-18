@@ -1,6 +1,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./Layout/MainLayout";
+import Layout2 from "./Layout/Layout2";
 import HomePage from "./Pages/HomePage";
 import CompanyPage from "./Pages/CompanyPage";
 import SignIn from "./Pages/SignIn";
@@ -18,8 +19,16 @@ const router = createBrowserRouter([
       { path: 'company', element: <CompanyPage /> },
     ],
   },
-  { path: 'sign-in', element: <SignIn /> },
-  { path: 'sign-up', element: <SignUp /> },
+  {
+    path: '/',
+    element: <Layout2 />,
+    children: [
+    
+      { path: 'sign-in', element: <SignIn /> },
+      { path: 'sign-up', element: <SignUp /> },
+    ],
+  },
+  
 ])
 
 function App() {

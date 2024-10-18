@@ -5,7 +5,6 @@ import SignInForm from '../components/SignInForm'
 const SignIn = () => {
   return (
     <div className='text-white bg-black h-screen'>
-      <Navbar2 />
       <SignInForm/>
     </div>
   )
