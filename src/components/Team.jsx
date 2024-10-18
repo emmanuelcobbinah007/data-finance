@@ -35,12 +35,12 @@ const Team = () => {
         <div className='relative z-10 bg-white max-w-full pt-10 mx-auto lg:text-left text-center'> 
           <h1 className='text-[#00df9a] font-bold md:text-6xl sm:text-5xl text-3xl md:py-6'>The Team</h1>
         </div>
-        <div className='relative z-10 grid grid-cols-2 pt-10 pb-24 bg-white'>
+        <div className='relative z-10 md:grid md:grid-cols-2 flex flex-col justify-center pt-10 pb-24 bg-white'>
             <div className='flex justify-center'>
-            <img className='rounded-xl lg:w-[300px] md:w-[250px] shadow-xl mr-[-25%]' src={Picture1} alt="/" />
+            <img className='rounded-xl lg:w-[300px] md:w-[275px] w-[250px] shadow-xl md:mr-[-25%]' src={Picture1} alt="/" />
             </div>
-            <div className='ml-[-35%] flex flex-col justify-center '>
-              <h1 className='w-full lg:text-4xl md:text-3xl font-bold text-black text-center'>Emmanuel Cobbinah</h1>
+            <div className='md:ml-[-35%] flex flex-col justify-center'>
+              <h1 className='w-full lg:text-4xl md:text-2xl font-bold text-black text-center text-xl pt-2'>Emmanuel Cobbinah</h1>
               <p className='text-[#00df9a] font-bold text-center'>Founder, Managing Director</p>
             </div>
           </div>
@@ -48,13 +48,13 @@ const Team = () => {
           <div className='grid lg:grid-cols-4 lg:gap-20 md:grid-cols-3 grid-cols-2 gap-10 mx-auto'>
             {people.map(person => (
               <div className='text-center' key={person.id}>
-                <img className='w-[225px] rounded-lg shadow-md mx-auto' src={person.img} alt="/" />
+                <img className='w-[225px] rounded-lg shadow-md mx-auto hover:scale-105 duration-300' src={person.img} alt="/" />
                 <h1 className='pt-2 w-full lg:text-xl md:text-lg font-bold'>{person.name}</h1>
                 <p className='text-[#00df9a] font-bold '>{person.role}</p>
               </div>))} 
           </div>
           </div>
-          <div className='max-w-[1240px] pt-[60px] hidden lg:block' onClick={turn}>
+          <div className='cursor-pointer max-w-[1240px] pt-[60px] hidden lg:block' onClick={turn}>
             {arrow ? <FaAngleDown className='text-4xl mx-auto'/> : <FaAngleUp className='text-4xl mx-auto'/> }
           
           </div>
