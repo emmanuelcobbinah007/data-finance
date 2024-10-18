@@ -19,7 +19,7 @@ const Navbar = () => {
         <Link to='/'><li className='p-4 cursor-pointer mx-[3px] hover:text-[#00df9a] duration-200'>Home</li></Link>
         <Link to='/company'><li className='p-4 cursor-pointer mx-[3px] hover:text-[#00df9a] duration-200'>Company</li></Link>
         <Link to='/sign-in'><li className='p-4 w-[90px] mx-[3px] cursor-pointer hover:text-[#00df9a] duration-200'>Sign in</li></Link>
-            <li className='p-4 pt-1.5 mt-3 mx-[3px] bg-white text-black w-[128px] pr-[1] rounded-md font-bold h-9 cursor-pointer hover:bg-[#00df9a] duration-200'>Get Started</li>
+           <Link to='/sign-up' ><li className='p-4 pt-1.5 mt-3 mx-[3px] bg-white text-black w-[128px] pr-[1] rounded-md font-bold h-9 cursor-pointer hover:bg-[#00df9a] duration-200'>Get Started</li></Link>
         </ul>
         <div onClick={navHandler} className='block md:hidden cursor-pointer hover:text-[#00df9a] duration-200'>
             {!nav ? <AiOutlineMenu size={20}/> : <AiOutlineClose size={20}/>}
